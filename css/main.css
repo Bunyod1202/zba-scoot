@@ -53,6 +53,7 @@ body{
   font-family: "Lexend Deca", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  overflow-x: hidden;
   /* line-height: var(--main-line-height); */
 }
 
@@ -125,6 +126,230 @@ color: var(--main-yellow-color);
 /* header finish */
 
 /* Islomxon */
+
+/* hero-section-start */
+.hero{
+  background-image: url(../images/page1-bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 116px;
+}
+.hero__box{
+  color: var(--main-white-color);
+  padding: 152px 0px;
+  position: relative;
+}
+.hero__box::after{
+  position: absolute;
+  width: 452px;
+  height: 150px;
+  top: 405px;
+  right: -470px;
+  background-image: url(../images/ooo.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+.hero__theme{
+  margin: 0;
+  margin-bottom: 40px;
+  width: 500px;
+  height: 112px;
+  font-family: "Space Mono";
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  font-weight: 700;
+}
+.hero__minibox{
+  margin: 40px;
+}
+.hero__commit{
+  margin-bottom: 40px;
+  width: 405px;
+  height: 100px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.hero__minibox::before{
+  position: absolute;
+  width: 203px;
+  height: 15px;
+  top: 333px;
+  left: -205px;
+  background-image: url(../images/page1-hero--.svg);
+  content: "";
+}
+.hero__minibox::after{
+  position: absolute;
+  width: 452px;
+  height: 150px;
+  top: 333px;
+  left: 540px;
+  background-image: url(../images/page1-hero--2.svg);
+  content: "";
+}
+/* hero-section-end */
+
+/* info-section-start */
+.info{
+  position: relative;
+  padding: 180px 0px;
+}
+.info__list{
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+.info__list::before{
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 15px;
+  top: -110px;
+  left: -205px;
+  background-image: url(../images/Page1-info-list-bg.svg);
+}
+.info__item{
+  margin-right: 30px;
+}
+.info__list :nth-child(1)::before{
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: -150px;
+  left: 35px;
+  background-image: url(../images/page1-item2.svg);
+}
+.info__list :nth-child(2)::before{
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: -150px;
+  left: 410px;
+  background-image: url(../images/page1-item3.svg);
+}
+.info__list :nth-child(3)::before{
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: -150px;
+  left: 795px;
+  background-image: url(../images/page1-item1.svg);
+}
+.info__theme{
+  color: var(--main-dark-navy-color);
+  margin: 0;
+  margin-bottom: 27px;
+  width: 350px;
+  height: 28px;
+  font-family: "Space Mono";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  font-weight: 700;
+}
+.info_theme--2{
+  width: 445px;
+  height: 96px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  margin-bottom: 24px;
+}
+.info__commit{
+  color: var(--main-dim-grey-color);
+  width: 350px;
+  height: 100px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.info__commit--2{
+  width: 445px;
+  margin-bottom: 40px;
+}
+.info__list2{
+  margin-top: 200px;
+  list-style: none;
+  position: relative;
+}
+.info__item2{
+  margin-bottom: 385px;
+}
+.child2{
+  margin-left: 640px;
+}
+.info__item2--2{
+  margin-bottom: 0px;
+}
+.info__item2 :nth-child(1)::before{
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  top: -60px;
+  right: 0px;
+  background-image: url(../images/page1-img1.jpg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.info__item2 :nth-child(2)::after{
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  top: 600px;
+  left: 0px;
+  background-image: url(../images/page1-img2.jpg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex-direction: row-reverse;
+}
+.info__item2 :nth-child(3)::before{
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  bottom: -60px;
+  right: 0px;
+  background-image: url(../images/page1-img3.jpg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.info__list2 :nth-child(1)::after{
+  content: "";
+  position: absolute;
+  width: 735px;
+  height: 150px;
+  top: 235px;
+  right: -150px;
+  background-image: url(../images/page1-info--1.svg);
+}
+.info__list2 :nth-child(3)::after{
+  content: "";
+  position: absolute;
+  width: 735px;
+  height: 129px;
+  bottom: 135px;
+  right: -535px;
+  background-image: url(../images/page1-info--3.svg);
+}
+.info__list2 :nth-child(2)::before{
+  content: "";
+  position: absolute;
+  width: 745px;
+  height: 150px;
+  top: 625px;
+  left: -555px;
+  z-index: 2;
+  background-image: url(../images/page1-info--2.svg);
+}
+
+/* info-section-end */
 /* Islomxon finish */
 
 /* Bunyod */
