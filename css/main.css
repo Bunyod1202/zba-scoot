@@ -1,11 +1,31 @@
 /* VARIABLES */
 
 :root{
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-font-weight : 400; */
-  /* --main-line-height : 1.5; */
+  --main-yellow-color : #FCB72B;
+  --main-dark-navy-color : #495567;
+  --main-dim-grey-color : #939CAA;
+  --main-light-grey-color : #E5ECF4;
+  --main-white-color : #ffffff;
+  --main-snow-color : #F2F5F9;
+  --main-light-yellow-color : #FFF4DF;
+  --main-font-size : 48px;
+  --main-font-weight : 700;
+  --main-line-height : 25px;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
+  url("../fonts/space-mono-v11-latin-700.woff") format("woff"); 
+}
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v16-latin-regular.woff2") format("woff2"),
+  url("../fonts/lexend-deca-v16-latin-regular.woff") format("woff"); 
 }
 
 /* GENERAL */
@@ -20,16 +40,19 @@ img{
   display: block;
   height: auto;
 }
-
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 body{
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   /* line-height: var(--main-line-height); */
 }
 
@@ -50,16 +73,131 @@ body{
 /* CONTAINER */
 
 .container{
-  /* max-width: your-size-here; */
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* STICKY-FOOTER */
+
+/* header */
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+} 
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 58px;
+  padding: 0;
+}
+.nav__list-item:not(:nth-child(1)){
+  margin-left: 32px;
+}
+.nav__list-link {
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--main-dim-grey-color);
+  transition: all 0.3s linear;
+}
+.nav__list-link:hover {
+color: var(--main-yellow-color);
+}
+.btn {
+  padding: 14px 39px;
+  font-family: 'Space Mono';
+font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+color: var(--main-white-color);
+background-color: var(--main-yellow-color);
+margin-left: auto;
+border: 3px solid #FCB72B;
+transition: all 0.3s linear;
+}
+.btn:hover {
+background-color: transparent;
+color: var(--main-yellow-color);
+}
+/* header finish */
+
+/* Islomxon */
+/* Islomxon finish */
+
+/* Bunyod */
+/* Bunyod finish */
+
+/* footer */
+
+.site-footer-top {
+  background-color: #495567;
+  
+  background-image: url("../images/footer-top-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 325px) calc(-100% + 90px);
+}
+.footer-top {
+  padding: 102px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.footer-bottom {
+  background-color:#333A44;
+}
+.footer-title {
+  width: 415px;
+  margin: 0;
+  font-family: 'Space Mono';
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+
+color: var(--main-white-color);
+}
+.brand {
+  width: 359px;
+display: flex;
+justify-content: space-between;
+}
+.appstore {
+  width: 159px;
+  height: 56px;
+background-image: url("../images/appstore.png");
+}
+.googleplay {
+  width: 182px;
+  height: 56px;
+background-image: url("../images/googleplay.png");
+}
+.footer-inner {
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+}
+.icon-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+.icon-list__link svg path {
+transition: all 0.3s linear;
+}
+.icon-list__link:hover svg path {
+fill: var(--main-white-color);
+
 }
 
-/* STICKY-FOOTER */
-.site-main{
-  flex-grow: 1;
-}
+/* footer finish */
+
 
 
