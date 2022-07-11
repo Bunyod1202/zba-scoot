@@ -137,12 +137,13 @@ color: var(--main-yellow-color);
   padding: 152px 0px;
   position: relative;
 }
+
 .hero__box::after{
   position: absolute;
   width: 452px;
   height: 150px;
   top: 405px;
-  right: -470px;
+  right: -393px;
   background-image: url(../images/ooo.svg);
   background-repeat: no-repeat;
   content: "";
@@ -193,11 +194,16 @@ color: var(--main-yellow-color);
 .info{
   position: relative;
   padding: 180px 0px;
+  background-image: url("../images/Mask.png"),url("../images/Mask.png"),url("../images/Mask.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 824px) calc(50% + 125px),calc(50% + 835px) calc(50% + -515px),calc(50% + 830px) calc(50% + 908px);
 }
 .info__list{
   display: flex;
   list-style: none;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 .info__list::before{
   content: "";
@@ -211,6 +217,8 @@ color: var(--main-yellow-color);
 .info__item{
   margin-right: 30px;
 }
+
+
 .info__list :nth-child(1)::before{
   content: "";
   position: absolute;
@@ -271,6 +279,7 @@ color: var(--main-yellow-color);
   margin-bottom: 40px;
 }
 .info__list2{
+  padding: 0;
   margin-top: 200px;
   list-style: none;
   position: relative;
