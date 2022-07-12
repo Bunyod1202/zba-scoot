@@ -603,6 +603,75 @@ font-size: 15px;
 line-height: 25px;
 color: var(--main-dark-navy-color);
 }
+.cereers-hero .banner {
+  background-image: url("../images/Bitmap.png");
+}
+.cereers-img {
+  background-image: url("../images/afitsant.png");
+}
+.cereers-img::after {
+  background-image: url("../images/page1-info--1.svg");
+  top: 369px;
+}
+.cereers-btn {
+  margin-top: 40px;
+}
+.lists__list {
+  list-style: none;
+  padding: 0;
+  margin: 120px 0;
+}
+.lists__list-item {
+  padding: 32px 64px 35px 40px ;
+  background-color: var(--main-snow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.lists__title {
+  font-family: 'Space Mono';
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -1.07143px;
+color: var(--main-dark-navy-color);
+margin: 0;
+}
+.lists__text {
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: var(--main-dark-navy-color);
+margin: 8px 0 0 0 ;
+}
+.lists__list-item .btn {
+  padding: 14px 67px;
+}
+.your-city__card {
+  padding: 122px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-card__title {
+  margin: 0;
+  font-family: 'Space Mono';
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+color: var(--main-dark-navy-color);
+width: 351px;
+}
+.city-card__text {
+  margin: 0;
+  font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: var(--main-dim-grey-color);
+width: 445px;
+}
 /* Bunyod finish */
 
 /* footer */
