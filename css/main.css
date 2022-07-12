@@ -218,12 +218,11 @@ color: var(--main-yellow-color);
 
 /* info-section-start */
 .info{
-  position: relative;
+
   padding: 180px 0px;
-  background-image: url("../images/Mask.png"),url("../images/Mask.png"),url("../images/Mask.png");
-  background-repeat: no-repeat;
-  background-position: calc(50% - 824px) calc(50% + 125px),calc(50% + 835px) calc(50% + -515px),calc(50% + 830px) calc(50% + 908px);
+ 
 }
+
 .info__list{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,6 +743,19 @@ font-size: 15px;
 line-height: 25px;
 color: var(--main-dim-grey-color);
 width: 445px;
+}
+.intro-img {
+  background-image: url("../images/page1-img1.jpg");
+}
+.card-list__item:nth-child(2) .intro-img {
+  background-image: url("../images/page1-img2.jpg");
+}
+.card-list__item:nth-child(3) .intro-img::after {
+  top: 144px;
+  left: 884px;
+}
+.card-list__item:nth-child(3) .intro-img {
+  background-image: url("../images/page1-img3.jpg");
 }
 /* Bunyod finish */
 
