@@ -36,7 +36,7 @@ var simplemaps_worldmap_mapdata={
     hide_labels: "no",
    
 		//Zoom settings
-		manual_zoom: "yes",
+		manual_zoom: "no",
     back_image: "no",
     arrow_box: "no",
     navigation_size: "40",
@@ -47,7 +47,7 @@ var simplemaps_worldmap_mapdata={
     initial_zoom_solo: "no",
     region_opacity: 1,
     region_hover_opacity: 0.6,
-    zoom_out_incrementally: "yes",
+    zoom_out_incrementally: "no",
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
